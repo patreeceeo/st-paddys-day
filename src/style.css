@@ -1,0 +1,101 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** RESET **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+}
+
+.landscape-bg {
+  background-image: url("/landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.paper {
+  background-color: rgba(237, 255, 247, 0.9);
+  max-width: 8in;
+  margin: 1in auto;
+  padding: 1in;
+  color: darkslategray;
+  line-height: 2;
+
+  box-shadow: inset 0 0 0 .1em hsla(0,0%,0%,.1),
+    inset 0 0 1em hsla(0,0%,0%,.05),
+    0 .1em .25em hsla(0,0%,0%,.5);
+}
+
+.paper::first-letter {
+    float: left;
+    font-size: 8em;
+    padding-right: 0.25in;
+    line-height: 1;
+}
+
+.folded-paper {
+    background-image: linear-gradient(hsla(0,0%,0%,.025), hsla(0,0%,100%,.05) 33%, hsla(0,0%,0%,.05) 33%, hsla(0,0%,100%,.05) 67%, hsla(0,0%,0%,.05) 67%, hsla(0,0%,100%,.025));
+    position: relative;
+}
+.folded-paper:after,
+.folded-paper:before {
+    bottom: .1em;
+    box-shadow: 0 0 .5em .5em hsla(0,0%,0%,.25);
+    content: '';
+    height: 3em;
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+}
+.folded-paper:after {
+    right: 1em;
+    -webkit-transform: rotate(3deg);
+    -webkit-transform-origin: 100% 100%;
+}
+.folded-paper:before {
+    left: 1em;
+    -webkit-transform: rotate(-3deg);
+    -webkit-transform-origin: 0% 100%;
+}
