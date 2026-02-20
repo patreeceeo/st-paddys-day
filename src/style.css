@@ -1,16 +1,16 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  height: 100%;
 }
 
 /** RESET **/
@@ -43,8 +43,32 @@ footer, header, hgroup, menu, nav, section {
   box-sizing: border-box;
 }
 
-:root {
-  height: 100%;
+b, dt, th, figcaption {
+  font-weight: 700;
+  font-family: UnifrakturCook;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+dd {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem;
+  border: 1px solid #00000022;
 }
 
 .landscape-bg {
@@ -56,23 +80,40 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .paper {
-  background-color: rgba(237, 255, 247, 0.9);
-  max-width: 8in;
-  margin: 1in auto;
-  padding: 1in;
-  color: darkslategray;
-  line-height: 2;
+  background-color: #f5f5dcde;
+  max-width: 6in;
+  padding: 1.5rem 2.5rem;
+  color: #1f5c39;
 
   box-shadow: inset 0 0 0 .1em hsla(0,0%,0%,.1),
     inset 0 0 1em hsla(0,0%,0%,.05),
     0 .1em .25em hsla(0,0%,0%,.5);
 }
 
-.paper::first-letter {
+.paper p {
+  margin-bottom: 0.5em;
+}
+
+.paper h1,
+.paper h2 {
+  font-family: UnifrakturCook;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.paper h1 {
+  font-size: 4rem;
+}
+.paper h2 {
+  font-size: 3rem;
+}
+
+.large-first-letter::first-letter {
     float: left;
-    font-size: 8em;
-    padding-right: 0.25in;
+    font-size: 5em;
+    padding-right: 0.1in;
     line-height: 1;
+    font-family: UnifrakturCook;
 }
 
 .folded-paper {
@@ -98,4 +139,51 @@ footer, header, hgroup, menu, nav, section {
     left: 1em;
     -webkit-transform: rotate(-3deg);
     -webkit-transform-origin: 0% 100%;
+}
+
+.leprechaun-dance {
+  height: 20rem;
+  padding-left: 4rem;
+}
+.shift-down {
+  position: relative;
+  margin-top: -2rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.beer {
+  height: 12rem;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.relative {
+  position: relative;
+}
+
+.my-50vh {
+  margin-top: 50vh;
+  margin-top: 50vh;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
+}
+
+.large-text {
+  font-size: 3rem;
 }
