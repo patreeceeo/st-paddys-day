@@ -46,17 +46,21 @@ footer, header, hgroup, menu, nav, section {
 }
 
 @font-face {
-  font-family: 'UnifrakturCook';
+  font-family: 'Irishuncialfabeta';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/UnifrakturCook.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(/Irishuncial.ttf) format('truetype');
+  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
 }
 
 b, dt, th, figcaption {
   font-weight: 700;
-  font-family: UnifrakturCook;
+  font-family: Irishuncialfabeta;
+}
+
+i {
+  font-style: italic;
 }
 
 ul,
@@ -121,7 +125,7 @@ th, td {
 
 .paper h1,
 .paper h2 {
-  font-family: UnifrakturCook;
+  font-family: Irishuncialfabeta;
   text-align: center;
   margin: 1rem 0;
 }
@@ -138,7 +142,7 @@ th, td {
     font-size: 5em;
     padding-right: 0.1in;
     line-height: 1;
-    font-family: UnifrakturCook;
+    font-family: Irishuncialfabeta;
 }
 
 .folded-paper {
