@@ -154,7 +154,7 @@ footer {
     float: left;
     font-size: 8em;
     padding-right: 0.1in;
-    line-height: .5;
+    line-height: .65;
     font-family: Irishuncialfabeta;
 }
 
@@ -196,6 +196,7 @@ img[src=\/beer\.png] {
 
 figure {
   text-align: center;
+  padding: 0.5rem;
 }
 
 .float-left {
