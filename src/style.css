@@ -85,6 +85,7 @@ th, td {
   vertical-align: top;
   padding: 0.5rem;
   border: 1px dotted var(--text-color);
+  word-wrap: break-word;
 }
 
 footer {
