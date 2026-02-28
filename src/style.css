@@ -86,6 +86,12 @@ th, td {
   border: 1px dotted var(--text-color);
 }
 
+footer {
+  padding: 1rem;
+  background-color: #00000099;
+  color: white;
+}
+
 .landscape-bg {
   background-image: url("/landscape.jpg");
   background-size: cover;
