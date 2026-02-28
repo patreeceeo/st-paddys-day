@@ -159,10 +159,10 @@ th, td {
 }
 
 .beer {
-  height: 10rem;
+  height: 12rem;
 }
 
-figcaption {
+figure {
   text-align: center;
 }
 
