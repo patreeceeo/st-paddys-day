@@ -158,6 +158,12 @@ th, td {
   top: 2rem;
 }
 
+img[src=\/shamrock\.png] {
+  position: relative;
+  z-index: 3;
+  height: 15rem;
+}
+
 .beer {
   height: 12rem;
 }
