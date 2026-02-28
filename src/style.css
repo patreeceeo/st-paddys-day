@@ -112,7 +112,6 @@ footer {
     0 .1em .25em hsla(0,0%,0%,.5);
 
   backdrop-filter: sepia(1);
-  z-index: 1;
 }
 
 .skew {
@@ -167,7 +166,6 @@ footer {
   height: 20rem;
   padding-left: 2rem;
   position: relative;
-  z-index: 2;
 }
 .shift-down {
   position: relative;
@@ -177,7 +175,6 @@ footer {
 
 img[src=\/shamrock\.png] {
   position: relative;
-  z-index: 3;
   height: min(40vh, 15rem);
 }
 
@@ -225,4 +222,11 @@ figure {
 
 .large-text {
   font-size: 3rem;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
 }
