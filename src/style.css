@@ -178,11 +178,11 @@ footer {
 img[src=\/shamrock\.png] {
   position: relative;
   z-index: 3;
-  height: 15rem;
+  height: min(40vh, 15rem);
 }
 
 img[src=\/beer\.png] {
-  height: 12rem;
+  height: min(25vh, 12rem);
 }
 
 .zoom-on-hover {
