@@ -110,10 +110,16 @@ footer {
     inset 0 0 1em hsla(0,0%,0%,.05),
     0 .1em .25em hsla(0,0%,0%,.5);
 
-  transform: matrix(1, -0.05, 0, 1, 0, 0);
-
   backdrop-filter: sepia(1);
   z-index: 1;
+}
+
+.skew {
+  transform: matrix(1, -0.05, 0, 1, 0, 0);
+}
+
+.unskew {
+  transform: matrix(1, 0.05, 0, 1, 0, 0);
 }
 
 .paper p {
