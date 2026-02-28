@@ -168,11 +168,6 @@ sup {
     position: relative;
 }
 
-.leprechaun-dance {
-  height: 20rem;
-  padding-left: 2rem;
-  position: relative;
-}
 .shift-down {
   position: relative;
   margin-top: -2rem;
@@ -186,6 +181,11 @@ img[src$=shamrock\.png] {
 
 img[src$=beer\.png] {
   height: min(25vh, 12rem);
+}
+img[src$=dance\.gif] {
+  --size: 18rem;
+  width: var(--size);
+  border-radius: calc(var(--size) / 2);
 }
 
 .zoom-on-hover {
