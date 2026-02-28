@@ -99,7 +99,7 @@ sup {
 
 .landscape-bg {
   background-image: url("/landscape.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
